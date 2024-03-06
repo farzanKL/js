@@ -15,7 +15,6 @@ createOrder(cart, function (orderId) {
 });
 
 const promise = createOrder(cart);
-
 promise.then(function (orderId) {
     return proceedToPayment(orderId);
 })
